@@ -16,7 +16,7 @@ parser.add_argument("time", help="Choose amount of time your script will take")
 
 args = parser.parse_args()
 
-print("SBATCH --job-name=lb244.test")
+print("SBATCH --job-name=loperez.test")
 print(f"SBATCH --partition= {args.partition}")
 print(f"SBATCH --nodes= {args.nodes}")
 print("SBATCH --qos cloud")
@@ -25,7 +25,7 @@ print(f"SBATCH --time= {args.time}")
 print("SBATCH --output=%x.%j.out")
 print("SBATCH --error=%x.%j.err")
 print("SBATCH --mail-type=ALL")
-print("BATCH --mail-user=lb244@uark.edu")
+print("BATCH --mail-user=loperez@uark.edu")
 
 print("export OMP_NUM_THREADS=32")
 
